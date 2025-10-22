@@ -1,0 +1,198 @@
+/* Font & dasar */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #121212, #1a1a1a);
+  color: #eaeaea;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+    .logo {
+  width: 120px;      
+  height: auto;
+  vertical-align: middle;
+  border-radius: 10px; /* opsional biar sudutnya lembut */
+}
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* Hero section */
+.hero {
+  background: url('images/bg.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffcc00;
+  color: #333;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffd633;
+  transform: scale(1.05);
+}
+
+/* Artikel grid */
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 40px;
+  color: #ffcc00;
+}
+
+.artikel-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1f1f1f;
+  border-radius: 15px;
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.1);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  color: #ffcc00;
+}
+
+/* Artikel lengkap */
+.artikel img.artikel-gambar {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Form hubungi */
+.form-hubungi {
+  width: 60%;
+  background: #2b2b2b;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.form-hubungi input, .form-hubungi textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-hubungi button {
+  background: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-hubungi button:hover {
+  background: #ffd633;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .artikel-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-hubungi {
+    width: 90%;
+  }
+}
